@@ -1,0 +1,58 @@
+[alias]
+    unadd = restore --staged
+
+[apply]
+	# Detect whitespace errors when applying a patch
+	whitespace = fix
+
+[commit]
+	gpgSign = true
+
+[core]
+	# Global ignore `.gitignore`
+	excludesfile = ~/.gitignore_global
+
+    # Make `git rebase` safer on macOS
+	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+	trustctime = false
+
+[diff]
+	# Detect copies as well as renames
+	renames = copies
+
+	# Enable an experimental heuristic that shifts the hunk boundary in an
+	# attempt to make the resulting patch easier to read.
+	indentHeuristic = true
+
+
+[github]
+	user = NoahCardoza
+
+[help]
+	# Automatically correct and execute mistyped commands
+	autocorrect = 1
+
+[init]
+	defaultBranch = main
+
+[pull]
+    ff = only
+    rebase = interactive
+  
+[push]
+	autoSetupRemote = true
+
+[tag]
+	forceSignAnnotated = true
+
+[user]
+	email = noahcardoza@gmail.com
+	name = NoahCardoza
+	signingkey = 979D0D43814F1C6B
+
+
+# URL shorthands
+
+# Use SSH instead of HTTPS for GitHub repositories
+[url "ssh://git@github.com/"]
+    insteadOf = "https://github.com/"

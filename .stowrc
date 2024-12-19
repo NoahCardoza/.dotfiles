@@ -1,0 +1,4 @@
+--no-folding
+--ignore=.stowrc
+--ignore=.DS_Store
+--ignore=sync.sh
