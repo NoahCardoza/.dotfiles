@@ -104,5 +104,6 @@ source $ZSH/oh-my-zsh.sh
 alias zim="vim ~/.zshrc"
 alias zode="code ~/.zshrc"
 alias hgrep="history | grep"
+alias gld='nix run "nixpkgs#gitleaks" detect'
 
-export SSH_AUTH_SOCK=~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock
+export SSH_AUTH_SOCK="~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
