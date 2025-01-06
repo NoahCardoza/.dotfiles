@@ -11,5 +11,9 @@ for file in ./packages/*; do
   fi
 done
 
-# the mirrors into the home directory
+# install the mirrors into the home directory
 stow --verbose --target=$HOME --dir=./mirrors .
+
+# install the config files that need to be placed into application support
+# TODO: place these in .config for non-macOS systems
+stow --verbose --target="$HOME/Library/Application Support" --dir=./application-support .
